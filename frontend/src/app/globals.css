@@ -1,0 +1,147 @@
+:root {
+  /* ================================
+     Base
+     ================================ */
+
+  --background: #fafaf9;
+  --foreground: #1c1917;
+  --border: #e7e5e4;
+  --input: #f5f5f4;
+
+  /* ================================
+     Primary - Teal
+     ================================ */
+
+  --primary: #0f766e;
+  --primary-foreground: #ffffff;
+  --primary-dark: #115e59;
+  --primary-light: #ccfbf1;
+
+  /* ================================
+     Accent - Amber
+     ================================ */
+
+  --accent: #f59e0b;
+  --accent-soft: #fffbeb;
+
+  /* ================================
+     Muted
+     ================================ */
+
+  --muted: #e7e5e4;
+  --muted-foreground: #78716c;
+
+  /* ================================
+     Soft Background
+     ================================ */
+
+  --soft: #f0fdfa;
+
+  /* ================================
+     Semantic
+     ================================ */
+
+  --success: #16a34a;
+  --success-soft: #dcfce7;
+
+  --warning: #f59e0b;
+  --warning-soft: #fef3c7;
+
+  --error: #dc2626;
+  --error-soft: #fee2e2;
+
+  --info: #0284c7;
+  --info-soft: #e0f2fe;
+
+  /* ================================
+     Favourite
+     ================================ */
+
+  --favorite: #e11d48;
+  --favorite-soft: #ffe4e6;
+
+  /* ================================
+     Text
+     ================================ */
+
+  --ink-soft: #57534e;
+}
+
+@theme inline {
+  /* ================================
+     Colors
+     ================================ */
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-soft: var(--soft);
+
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+
+  --color-error: var(--error);
+  --color-error-soft: var(--error-soft);
+
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+
+  --color-favorite: var(--favorite);
+  --color-favorite-soft: var(--favorite-soft);
+
+  --color-ink-soft: var(--ink-soft);
+
+  /* ================================
+     Fonts
+     ================================ */
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-playfair);
+  --font-mono: var(--font-geist-mono);
+
+  /* ================================
+     Font Sizes
+     ================================ */
+
+  --text-extra-small: 12px;
+  --text-small: 14px;
+  --text-base: 16px;
+  --text-large: 18px;
+  --text-extra-large: 20px;
+  --text-huge: 24px;
+  --text-extra-huge: 30px;
+  --text-gigantic: 36px;
+  --text-extra-gigantic: 48px;
+
+  /* ================================
+     Border Radius
+     ================================ */
+
+  --radius-small: 6px;
+  --radius-medium: 10px;
+  --radius-large: 16px;
+  --radius-extra-large: 24px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+}
