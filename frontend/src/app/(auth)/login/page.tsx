@@ -35,8 +35,7 @@ export default function LoginPage() {
             className="object-cover"
           />
 
-          {/* Image Overlay */}
-          <div className="absolute inset-0 bg-primary/60" />
+          
 
           {/* Logo */}
           <div className="absolute left-9 top-9 z-10 flex items-center gap-2.5">
