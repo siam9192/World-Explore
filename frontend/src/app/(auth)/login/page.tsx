@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 
 import Input from "@/components/ui/input";
-import login_image from "../../../../public/positano.jpg"
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(true);
@@ -28,7 +27,7 @@ export default function LoginPage() {
          
           {/* Background Image */}
           <Image
-            src={login_image}
+            src={"/images/positano.jpg"}
             alt="Beautiful travel destination"
             fill
             priority
