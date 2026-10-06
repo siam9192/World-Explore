@@ -24,7 +24,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <button className="bg-primary px-4 py-3 font-heading text-extra-huge">Click here</button>
+        {children}
       </body>
     </html>
   );
