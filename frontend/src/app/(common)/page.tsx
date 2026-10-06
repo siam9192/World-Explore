@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-  <div>
-    this is home page
+  <div className="min-h-screen">
+  <p>This is Home Page</p>
   </div>
   );
 }

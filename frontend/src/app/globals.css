@@ -25,7 +25,7 @@
 
   --accent: #f59e0b;
   --accent-soft: #fffbeb;
-
+  --accent-foreground: #1c1917;
   /* ================================
      Muted
      ================================ */
@@ -87,6 +87,7 @@
 
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
+  --color-accent-foreground:var(--accent-foreground)
 
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
