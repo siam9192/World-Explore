@@ -176,7 +176,7 @@ function Header() {
                 </Link>
 
                 <Link
-                  href="/signup"
+                  href="/register"
                   className="
                     rounded-medium
                     bg-primary
