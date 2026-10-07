@@ -10,7 +10,7 @@ export default function Input({
 }: InputProps) {
   return (
     <input {...props}
-      className={`w-full h-10 px-3 rounded-[var(--radius-medium)] border border-border bg-white text-small text-foreground outline-none  transition-all duration-200 placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-primary/10
+      className={`w-full h-10 px-3 rounded-medium border border-border bg-white text-small text-foreground outline-none  transition-all duration-200 placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-primary/10
         ${className} `}
     />
   );
