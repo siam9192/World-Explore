@@ -1,0 +1,681 @@
+[
+  {
+    "id": "dest-001",
+    "title": "Seventeen centuries of quiet beauty",
+    "slug": "kyoto-japan",
+    "images": [
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "badge": "Trending",
+    "isFavorite": false,
+    "rating": 4.8,
+    "totalReviews": 3124,
+    "description": "Kyoto is Japan at its most deliberate — ancient temples, moss gardens, wooden machiya and quiet tea houses woven together through centuries of tradition.",
+    "editorNote": "This guide is maintained by our editors with 3,124 verified traveller reviews. Best explored over 4–5 slow days, on foot and by bicycle.",
+    "shortDescription": "Temple gardens, tea houses and maple-lined lanes.",
+    "price": {
+      "amount": 120,
+      "currency": "$",
+      "period": "day"
+    },
+    "guideVerified": true,
+    "bestTime": "Mar – May, Oct – Nov",
+    "dailyBudget": {
+      "min": 110,
+      "max": 160,
+      "currency": "$"
+    },
+    "idealTrip": "4–5 days",
+    "gettingAround": ["Train", "Bike", "Walk"],
+    "languages": ["Japanese", "English"],
+    "activities": [
+      {
+        "title": "Sunrise at Fushimi Inari",
+        "duration": "2–3 hrs",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "temple"
+      },
+      {
+        "title": "Arashiyama bamboo walk",
+        "duration": "Morning",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "leaf"
+      },
+      {
+        "title": "Tea ceremony in Gion",
+        "duration": "90 min",
+        "price": 35,
+        "isFree": false,
+        "currency": "$",
+        "icon": "coffee"
+      },
+      {
+        "title": "Kamo river cycling",
+        "duration": "Half day",
+        "price": 18,
+        "isFree": false,
+        "currency": "$",
+        "icon": "bike"
+      }
+    ],
+    "location": {
+      "city": "Kyoto",
+      "state": "Kansai",
+      "country": "Japan",
+      "address": "605-0862 Kyoto, Higashiyama Ward, Japan",
+      "description": "20 min by JR from Osaka · Kansai Intl (KIX) → Haruka express",
+      "mapUrl": "https://maps.google.com/?q=Kyoto,Japan"
+    },
+    "createdAt": "2026-01-10T08:00:00Z",
+    "updatedAt": "2026-09-20T10:30:00Z"
+  },
+  {
+    "id": "dest-002",
+    "title": "The city of lights and timeless romance",
+    "slug": "paris-france",
+    "images": [
+      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "badge": "Popular",
+    "isFavorite": false,
+    "rating": 4.7,
+    "totalReviews": 5842,
+    "description": "Paris blends grand boulevards, intimate cafés, celebrated museums and centuries of architecture into one of Europe's most unforgettable city experiences.",
+    "editorNote": "A classic European escape best enjoyed slowly. Leave time for neighborhood walks, long lunches and spontaneous discoveries.",
+    "shortDescription": "Art, cafés, architecture and unforgettable city walks.",
+    "price": {
+      "amount": 180,
+      "currency": "$",
+      "period": "day"
+    },
+    "guideVerified": true,
+    "bestTime": "Apr – Jun, Sep – Oct",
+    "dailyBudget": {
+      "min": 140,
+      "max": 220,
+      "currency": "$"
+    },
+    "idealTrip": "4–6 days",
+    "gettingAround": ["Metro", "Walk", "Bike"],
+    "languages": ["French", "English"],
+    "activities": [
+      {
+        "title": "Eiffel Tower visit",
+        "duration": "2–3 hrs",
+        "price": 25,
+        "isFree": false,
+        "currency": "$",
+        "icon": "landmark"
+      },
+      {
+        "title": "Seine river walk",
+        "duration": "1–2 hrs",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "waves"
+      },
+      {
+        "title": "Louvre Museum",
+        "duration": "3–4 hrs",
+        "price": 24,
+        "isFree": false,
+        "currency": "$",
+        "icon": "museum"
+      }
+    ],
+    "location": {
+      "city": "Paris",
+      "country": "France",
+      "address": "Paris, Île-de-France, France",
+      "description": "Central Paris is easily connected by metro and regional rail.",
+      "mapUrl": "https://maps.google.com/?q=Paris,France"
+    },
+    "createdAt": "2026-01-15T09:00:00Z",
+    "updatedAt": "2026-09-18T12:00:00Z"
+  },
+  {
+    "id": "dest-003",
+    "title": "Where ancient streets meet modern energy",
+    "slug": "istanbul-turkey",
+    "images": [
+      "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "badge": "Editor's Pick",
+    "isFavorite": true,
+    "rating": 4.9,
+    "totalReviews": 2741,
+    "description": "Istanbul stretches across two continents, bringing together Byzantine history, Ottoman architecture, bustling bazaars and a vibrant modern culture.",
+    "editorNote": "Spend your mornings exploring historic neighborhoods and your evenings beside the Bosphorus with Turkish food and tea.",
+    "shortDescription": "Two continents, ancient landmarks and vibrant street life.",
+    "price": {
+      "amount": 95,
+      "currency": "$",
+      "period": "day"
+    },
+    "guideVerified": true,
+    "bestTime": "Apr – May, Sep – Oct",
+    "dailyBudget": {
+      "min": 70,
+      "max": 130,
+      "currency": "$"
+    },
+    "idealTrip": "3–5 days",
+    "gettingAround": ["Tram", "Ferry", "Walk"],
+    "languages": ["Turkish", "English"],
+    "activities": [
+      {
+        "title": "Hagia Sophia",
+        "duration": "2 hrs",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "landmark"
+      },
+      {
+        "title": "Grand Bazaar",
+        "duration": "2–3 hrs",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "shopping-bag"
+      },
+      {
+        "title": "Bosphorus cruise",
+        "duration": "2 hrs",
+        "price": 20,
+        "isFree": false,
+        "currency": "$",
+        "icon": "ship"
+      }
+    ],
+    "location": {
+      "city": "Istanbul",
+      "country": "Turkey",
+      "address": "Sultanahmet, Istanbul, Turkey",
+      "description": "Historic Istanbul is easily explored by tram, ferry and walking.",
+      "mapUrl": "https://maps.google.com/?q=Istanbul,Turkey"
+    },
+    "createdAt": "2026-02-01T08:30:00Z",
+    "updatedAt": "2026-09-15T11:20:00Z"
+  },
+  {
+    "id": "dest-004",
+    "title": "A tropical escape surrounded by emerald seas",
+    "slug": "bali-indonesia",
+    "images": [
+      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "badge": "Beach",
+    "isFavorite": false,
+    "rating": 4.6,
+    "totalReviews": 4218,
+    "description": "Bali combines volcanic landscapes, lush rice terraces, tropical beaches and a deeply rooted spiritual culture into an easygoing island escape.",
+    "editorNote": "Choose your base carefully. Ubud is ideal for culture and nature while the southern coast offers beaches, dining and nightlife.",
+    "shortDescription": "Rice terraces, temples, beaches and tropical adventures.",
+    "price": {
+      "amount": 85,
+      "currency": "$",
+      "period": "day"
+    },
+    "guideVerified": true,
+    "bestTime": "Apr – Oct",
+    "dailyBudget": {
+      "min": 60,
+      "max": 120,
+      "currency": "$"
+    },
+    "idealTrip": "5–8 days",
+    "gettingAround": ["Scooter", "Car", "Walk"],
+    "languages": ["Indonesian", "English"],
+    "activities": [
+      {
+        "title": "Tegallalang rice terraces",
+        "duration": "2 hrs",
+        "price": 5,
+        "isFree": false,
+        "currency": "$",
+        "icon": "leaf"
+      },
+      {
+        "title": "Temple sunrise",
+        "duration": "Morning",
+        "price": 8,
+        "isFree": false,
+        "currency": "$",
+        "icon": "sun"
+      },
+      {
+        "title": "Beach day",
+        "duration": "Full day",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "waves"
+      }
+    ],
+    "location": {
+      "city": "Ubud",
+      "country": "Indonesia",
+      "address": "Ubud, Gianyar Regency, Bali, Indonesia",
+      "description": "About 1.5 hours from Ngurah Rai International Airport.",
+      "mapUrl": "https://maps.google.com/?q=Ubud,Bali"
+    },
+    "createdAt": "2026-02-08T07:00:00Z",
+    "updatedAt": "2026-09-12T09:15:00Z"
+  },
+  {
+    "id": "dest-005",
+    "title": "Where mountains rise above a city of dreams",
+    "slug": "cape-town-south-africa",
+    "images": [
+      "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "badge": "Adventure",
+    "isFavorite": false,
+    "rating": 4.8,
+    "totalReviews": 1987,
+    "description": "Cape Town brings together dramatic mountains, beautiful beaches, vineyards and a rich cultural landscape at the southern tip of Africa.",
+    "editorNote": "Rent a car if possible. The surrounding peninsula and wine regions are just as rewarding as the city itself.",
+    "shortDescription": "Mountains, beaches, vineyards and unforgettable coastlines.",
+    "price": {
+      "amount": 105,
+      "currency": "$",
+      "period": "day"
+    },
+    "guideVerified": true,
+    "bestTime": "Nov – Mar",
+    "dailyBudget": {
+      "min": 80,
+      "max": 150,
+      "currency": "$"
+    },
+    "idealTrip": "4–6 days",
+    "gettingAround": ["Car", "Bus", "Walk"],
+    "languages": ["English", "Afrikaans"],
+    "activities": [
+      {
+        "title": "Table Mountain hike",
+        "duration": "3–5 hrs",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "mountain"
+      },
+      {
+        "title": "Cape Peninsula drive",
+        "duration": "Full day",
+        "price": 45,
+        "isFree": false,
+        "currency": "$",
+        "icon": "car"
+      },
+      {
+        "title": "Wine tasting",
+        "duration": "3 hrs",
+        "price": 30,
+        "isFree": false,
+        "currency": "$",
+        "icon": "wine"
+      }
+    ],
+    "location": {
+      "city": "Cape Town",
+      "country": "South Africa",
+      "address": "Cape Town, Western Cape, South Africa",
+      "description": "Cape Town International Airport is approximately 20 km from the city center.",
+      "mapUrl": "https://maps.google.com/?q=Cape+Town,South+Africa"
+    },
+    "createdAt": "2026-02-15T10:00:00Z",
+    "updatedAt": "2026-09-10T13:00:00Z"
+  },
+  {
+    "id": "dest-006",
+    "title": "A city built between canals and centuries",
+    "slug": "venice-italy",
+    "images": [
+      "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "badge": "Cultural",
+    "isFavorite": true,
+    "rating": 4.7,
+    "totalReviews": 3652,
+    "description": "Venice is a maze of canals, stone bridges and quiet alleyways where every turn reveals another piece of Italian history.",
+    "editorNote": "Stay overnight to experience Venice after the day-trippers leave and the narrow streets become wonderfully quiet.",
+    "shortDescription": "Canals, historic streets and timeless Italian charm.",
+    "price": {
+      "amount": 165,
+      "currency": "$",
+      "period": "day"
+    },
+    "guideVerified": true,
+    "bestTime": "Apr – Jun, Sep – Oct",
+    "dailyBudget": {
+      "min": 130,
+      "max": 200,
+      "currency": "$"
+    },
+    "idealTrip": "2–4 days",
+    "gettingAround": ["Walk", "Vaporetto", "Water Taxi"],
+    "languages": ["Italian", "English"],
+    "activities": [
+      {
+        "title": "Grand Canal ride",
+        "duration": "1 hr",
+        "price": 10,
+        "isFree": false,
+        "currency": "$",
+        "icon": "ship"
+      },
+      {
+        "title": "St. Mark's Square",
+        "duration": "1–2 hrs",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "landmark"
+      },
+      {
+        "title": "Rialto Market",
+        "duration": "1 hr",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "shopping-bag"
+      }
+    ],
+    "location": {
+      "city": "Venice",
+      "country": "Italy",
+      "address": "Venice, Veneto, Italy",
+      "description": "Venice Marco Polo Airport connects to the city by boat and bus.",
+      "mapUrl": "https://maps.google.com/?q=Venice,Italy"
+    },
+    "createdAt": "2026-02-20T09:30:00Z",
+    "updatedAt": "2026-09-08T08:45:00Z"
+  },
+  {
+    "id": "dest-007",
+    "title": "Where fjords meet colorful Nordic streets",
+    "slug": "bergen-norway",
+    "images": [
+      "https://images.unsplash.com/photo-1504829857797-ddff29c27927?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1520769669658-f07657f5a307?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1478827536114-da961b7f3e66?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "badge": "Nature",
+    "isFavorite": false,
+    "rating": 4.9,
+    "totalReviews": 1432,
+    "description": "Bergen is the gateway to Norway's spectacular fjords, surrounded by mountains and known for its colorful historic waterfront.",
+    "editorNote": "Use Bergen as a base for fjord excursions, then return to the city for excellent seafood and relaxed Nordic evenings.",
+    "shortDescription": "Fjords, mountains and colorful Scandinavian architecture.",
+    "price": {
+      "amount": 150,
+      "currency": "$",
+      "period": "day"
+    },
+    "guideVerified": true,
+    "bestTime": "May – Sep",
+    "dailyBudget": {
+      "min": 120,
+      "max": 190,
+      "currency": "$"
+    },
+    "idealTrip": "3–5 days",
+    "gettingAround": ["Train", "Ferry", "Walk"],
+    "languages": ["Norwegian", "English"],
+    "activities": [
+      {
+        "title": "Fløyen viewpoint",
+        "duration": "2 hrs",
+        "price": 18,
+        "isFree": false,
+        "currency": "$",
+        "icon": "mountain"
+      },
+      {
+        "title": "Bryggen walk",
+        "duration": "1 hr",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "landmark"
+      },
+      {
+        "title": "Fjord cruise",
+        "duration": "Full day",
+        "price": 75,
+        "isFree": false,
+        "currency": "$",
+        "icon": "ship"
+      }
+    ],
+    "location": {
+      "city": "Bergen",
+      "country": "Norway",
+      "address": "Bergen, Vestland, Norway",
+      "description": "Bergen Airport is connected to the city center by light rail.",
+      "mapUrl": "https://maps.google.com/?q=Bergen,Norway"
+    },
+    "createdAt": "2026-03-01T08:00:00Z",
+    "updatedAt": "2026-09-05T10:00:00Z"
+  },
+  {
+    "id": "dest-008",
+    "title": "A desert city painted in a thousand shades of blue",
+    "slug": "chefchaouen-morocco",
+    "images": [
+      "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "badge": "Hidden Gem",
+    "isFavorite": false,
+    "rating": 4.8,
+    "totalReviews": 987,
+    "description": "Chefchaouen is a peaceful mountain town famous for its blue-washed buildings, winding medina streets and relaxed Moroccan atmosphere.",
+    "editorNote": "Wake early to explore the medina before the streets become busy, then hike toward the Spanish Mosque for sunset.",
+    "shortDescription": "Blue-painted streets, mountain views and quiet charm.",
+    "price": {
+      "amount": 65,
+      "currency": "$",
+      "period": "day"
+    },
+    "guideVerified": true,
+    "bestTime": "Mar – May, Sep – Nov",
+    "dailyBudget": {
+      "min": 45,
+      "max": 90,
+      "currency": "$"
+    },
+    "idealTrip": "2–3 days",
+    "gettingAround": ["Walk", "Taxi"],
+    "languages": ["Arabic", "French", "English"],
+    "activities": [
+      {
+        "title": "Blue Medina walk",
+        "duration": "2 hrs",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "map"
+      },
+      {
+        "title": "Spanish Mosque sunset",
+        "duration": "2 hrs",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "sun"
+      },
+      {
+        "title": "Moroccan cooking class",
+        "duration": "3 hrs",
+        "price": 28,
+        "isFree": false,
+        "currency": "$",
+        "icon": "utensils"
+      }
+    ],
+    "location": {
+      "city": "Chefchaouen",
+      "country": "Morocco",
+      "address": "Chefchaouen, Tangier-Tetouan-Al Hoceima, Morocco",
+      "description": "The town is around 2 hours by road from Tangier.",
+      "mapUrl": "https://maps.google.com/?q=Chefchaouen,Morocco"
+    },
+    "createdAt": "2026-03-05T07:30:00Z",
+    "updatedAt": "2026-09-03T11:00:00Z"
+  },
+  {
+    "id": "dest-009",
+    "title": "A modern city framed by alpine peaks",
+    "slug": "zurich-switzerland",
+    "images": [
+      "https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1527095655060-4026c4af2b7c?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "badge": "New",
+    "isFavorite": false,
+    "rating": 4.6,
+    "totalReviews": 1128,
+    "description": "Zurich combines a beautiful lakefront, medieval lanes, world-class museums and easy access to the Swiss Alps.",
+    "editorNote": "Spend a day in the city before taking a train into the surrounding mountains. Swiss rail makes day trips remarkably easy.",
+    "shortDescription": "Lake views, old town streets and easy mountain escapes.",
+    "price": {
+      "amount": 190,
+      "currency": "$",
+      "period": "day"
+    },
+    "guideVerified": true,
+    "bestTime": "Jun – Sep, Dec – Feb",
+    "dailyBudget": {
+      "min": 150,
+      "max": 240,
+      "currency": "$"
+    },
+    "idealTrip": "3–5 days",
+    "gettingAround": ["Train", "Tram", "Walk"],
+    "languages": ["German", "English"],
+    "activities": [
+      {
+        "title": "Lake Zurich walk",
+        "duration": "2 hrs",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "waves"
+      },
+      {
+        "title": "Old Town tour",
+        "duration": "2 hrs",
+        "price": 15,
+        "isFree": false,
+        "currency": "$",
+        "icon": "landmark"
+      },
+      {
+        "title": "Uetliberg hike",
+        "duration": "3 hrs",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "mountain"
+      }
+    ],
+    "location": {
+      "city": "Zurich",
+      "country": "Switzerland",
+      "address": "Zurich, Switzerland",
+      "description": "Zurich Airport is approximately 10 km from the city center.",
+      "mapUrl": "https://maps.google.com/?q=Zurich,Switzerland"
+    },
+    "createdAt": "2026-03-12T10:00:00Z",
+    "updatedAt": "2026-08-30T09:30:00Z"
+  },
+  {
+    "id": "dest-010",
+    "title": "Tropical islands where time slows down",
+    "slug": "maldives",
+    "images": [
+      "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
+    ],
+    "badge": "Luxury",
+    "isFavorite": true,
+    "rating": 4.9,
+    "totalReviews": 2865,
+    "description": "The Maldives is a collection of coral islands surrounded by turquoise lagoons, white-sand beaches and extraordinary marine life.",
+    "editorNote": "For a more affordable experience, consider staying on a local island instead of a private resort island.",
+    "shortDescription": "Turquoise lagoons, coral reefs and white-sand beaches.",
+    "price": {
+      "amount": 250,
+      "currency": "$",
+      "period": "day"
+    },
+    "guideVerified": true,
+    "bestTime": "Nov – Apr",
+    "dailyBudget": {
+      "min": 120,
+      "max": 500,
+      "currency": "$"
+    },
+    "idealTrip": "4–7 days",
+    "gettingAround": ["Boat", "Seaplane", "Walk"],
+    "languages": ["Dhivehi", "English"],
+    "activities": [
+      {
+        "title": "Snorkeling",
+        "duration": "2 hrs",
+        "price": 25,
+        "isFree": false,
+        "currency": "$",
+        "icon": "waves"
+      },
+      {
+        "title": "Island beach day",
+        "duration": "Full day",
+        "price": 0,
+        "isFree": true,
+        "currency": "$",
+        "icon": "sun"
+      },
+      {
+        "title": "Sunset boat trip",
+        "duration": "2 hrs",
+        "price": 45,
+        "isFree": false,
+        "currency": "$",
+        "icon": "ship"
+      }
+    ],
+    "location": {
+      "city": "Malé",
+      "country": "Maldives",
+      "address": "Malé, Maldives",
+      "description": "Velana International Airport is the main gateway to the Maldives.",
+      "mapUrl": "https://maps.google.com/?q=Male,Maldives"
+    },
+    "createdAt": "2026-03-20T08:00:00Z",
+    "updatedAt": "2026-08-25T14:00:00Z"
+  }
+]
