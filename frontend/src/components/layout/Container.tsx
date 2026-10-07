@@ -5,7 +5,7 @@ interface Props {
 
 function Container({children}:Props) {
   return (
-    <div className='container mx-auto'>{children}</div>
+    <div className='container mx-auto lg:px-0 px-2 '>{children}</div>
   )
 }
 
