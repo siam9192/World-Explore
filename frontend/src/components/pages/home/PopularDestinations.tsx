@@ -39,7 +39,7 @@ async function PopularDestinations() {
           </div>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5">
+        <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-5">
           {destinations.map((destination) => (
             <DestinationCard key={destination.id} destination={destination} />
           ))}

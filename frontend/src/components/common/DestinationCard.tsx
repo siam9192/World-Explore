@@ -67,6 +67,7 @@ const DestinationCard = ({ destination }: Props) => {
       </div>
 
       {/* Content */}
+  
       <div className="flex flex-1 flex-col p-3 sm:p-4">
         {/* Title + Rating */}
         <div className="flex items-start gap-2">
@@ -119,7 +120,7 @@ const DestinationCard = ({ destination }: Props) => {
           </p>
 
           <Link
-            href={`/destinations/${slug}`}
+            href={`/explore/${slug}`}
             className="flex shrink-0 items-center gap-0.5 text-xs font-semibold text-primary transition-opacity hover:opacity-80 sm:gap-1 sm:text-small"
           >
             <span>Explore</span>
@@ -127,6 +128,7 @@ const DestinationCard = ({ destination }: Props) => {
           </Link>
         </div>
       </div>
+   
     </article>
   );
 };

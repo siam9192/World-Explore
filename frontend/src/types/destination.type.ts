@@ -1,3 +1,5 @@
+import { Review } from "./review.type";
+
 export interface Destination extends Pick<
   DestinationDetails,
   | "id"
@@ -15,20 +17,24 @@ export interface Destination extends Pick<
   createdAt: string;
   updatedAt: string;
 }
-
 export interface DestinationDetails {
   id: string;
   title: string;
   slug: string;
+  tagline: string;
+
   images: string[];
+  categories: string[];
   badge?: string;
   isFavorite: boolean;
+
   rating: number;
   totalReviews: number;
 
   description: string;
-  editorNote: string;
   shortDescription: string;
+  editorNote: string;
+
   price: {
     amount: number;
     currency: string;
@@ -37,15 +43,22 @@ export interface DestinationDetails {
 
   guideVerified: boolean;
   bestTime: string;
+
   dailyBudget: {
     min: number;
     max: number;
     currency: string;
   };
+
   idealTrip: string;
   gettingAround: string[];
-
   languages: string[];
+
+  highlights: {
+    label: string;
+    value: string;
+    icon: string;
+  }[];
 
   activities: Activity[];
 
@@ -58,10 +71,11 @@ export interface DestinationDetails {
     mapUrl?: string;
   };
 
+  reviews: Review[];
+
   createdAt: string;
   updatedAt: string;
 }
-
 export interface Activity {
   title: string;
   duration: string;

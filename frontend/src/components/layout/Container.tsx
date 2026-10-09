@@ -1,11 +1,12 @@
 import React from 'react'
 interface Props {
-    children:React.ReactNode
+    children:React.ReactNode,
+    className?:string
 }
 
-function Container({children}:Props) {
+function Container({children,className}:Props) {
   return (
-    <div className='container mx-auto lg:px-0 px-2 '>{children}</div>
+    <div className={`container mx-auto lg:px-0 px-2 ${className||""} `}>{children}</div>
   )
 }
 

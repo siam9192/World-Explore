@@ -1,19 +1,11 @@
-
 "use client";
 
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Apple,
-  Check,
-  Eye,
-  EyeOff,
-  Lock,
-  Mail,
-} from "lucide-react";
+import { Apple, Check, Eye, EyeOff, Lock, Mail } from "lucide-react";
 
-import Input from "@/components/ui/input";
+import Input from "@/components/ui/Input";
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
@@ -171,15 +163,9 @@ export default function LoginPage() {
                   type="button"
                   onClick={() => setShowPassword((prev) => !prev)}
                   className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground transition-colors hover:text-foreground"
-                  aria-label={
-                    showPassword ? "Hide password" : "Show password"
-                  }
+                  aria-label={showPassword ? "Hide password" : "Show password"}
                 >
-                  {showPassword ? (
-                    <EyeOff size={15} />
-                  ) : (
-                    <Eye size={15} />
-                  )}
+                  {showPassword ? <EyeOff size={15} /> : <Eye size={15} />}
                 </button>
               </div>
             </div>
@@ -245,4 +231,3 @@ export default function LoginPage() {
     </main>
   );
 }
-
