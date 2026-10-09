@@ -1,0 +1,82 @@
+ [
+  {
+    "id": "1",
+    "name": "Beach",
+    "count": "128",
+    "image": "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "slug": "beach",
+    "avg_rating": 4.8,
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "name": "Mountain",
+    "count": "96",
+    "image": "https://images.pexels.com/photos/1266810/pexels-photo-1266810.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "slug": "mountain",
+    "avg_rating": 4.7,
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "3",
+    "name": "Historical",
+    "count": "84",
+    "image": "https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "slug": "historical",
+    "avg_rating": 4.5,
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "4",
+    "name": "City",
+    "count": "142",
+    "image": "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "slug": "city",
+    "avg_rating": 4.6,
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "5",
+    "name": "Nature",
+    "count": "110",
+    "image": "https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600",
+    "slug": "nature",
+    "avg_rating": 4.9,
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "6",
+    "name": "Island",
+    "count": "76",
+    "image": "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "slug": "island",
+    "avg_rating": 4.8,
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "7",
+    "name": "Adventure",
+    "count": "68",
+    "image": "https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "slug": "adventure",
+    "avg_rating": 4.7,
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "8",
+    "name": "Cultural",
+    "count": "92",
+    "image": "https://images.pexels.com/photos/2161467/pexels-photo-2161467.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "slug": "cultural",
+    "avg_rating": 4.6,
+    "created_at": "2024-01-01T00:00:00.000Z",
+    "updated_at": "2024-01-01T00:00:00.000Z"
+  }
+]

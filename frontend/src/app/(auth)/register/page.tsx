@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -16,7 +15,7 @@ import {
   Star,
 } from "lucide-react";
 
-import Input from "@/components/ui/input";
+import Input from "@/components/ui/Input";
 
 export default function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false);
@@ -36,8 +35,6 @@ export default function RegisterPage() {
           sizes="100vw"
           className="object-cover"
         />
-
-       
 
         <div className="absolute inset-0 bottom-0 h-full w-full bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
@@ -61,9 +58,7 @@ export default function RegisterPage() {
           <div className="rounded-medium border border-white/20 bg-white/10 p-3 backdrop-blur-md">
             <Heart size={16} className="mb-3 text-accent" />
 
-            <p className="text-small font-semibold text-white">
-              Save
-            </p>
+            <p className="text-small font-semibold text-white">Save</p>
 
             <p className="mt-0.5 text-extra-small text-white/75">
               Build your wishlist
@@ -74,9 +69,7 @@ export default function RegisterPage() {
           <div className="rounded-medium border border-white/20 bg-white/10 p-3 backdrop-blur-md">
             <Star size={16} className="mb-3 text-accent" />
 
-            <p className="text-small font-semibold text-white">
-              Review
-            </p>
+            <p className="text-small font-semibold text-white">Review</p>
 
             <p className="mt-0.5 text-extra-small text-white/75">
               Guide others
@@ -87,9 +80,7 @@ export default function RegisterPage() {
           <div className="rounded-medium border border-white/20 bg-white/10 p-3 backdrop-blur-md">
             <Map size={16} className="mb-3 text-accent" />
 
-            <p className="text-small font-semibold text-white">
-              Track
-            </p>
+            <p className="text-small font-semibold text-white">Track</p>
 
             <p className="mt-0.5 text-extra-small text-white/75">
               Map 140 countries
@@ -231,37 +222,23 @@ export default function RegisterPage() {
                   type="button"
                   onClick={() => setShowPassword((previous) => !previous)}
                   className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground transition-colors hover:text-foreground"
-                  aria-label={
-                    showPassword ? "Hide password" : "Show password"
-                  }
+                  aria-label={showPassword ? "Hide password" : "Show password"}
                 >
-                  {showPassword ? (
-                    <EyeOff size={15} />
-                  ) : (
-                    <Eye size={15} />
-                  )}
+                  {showPassword ? <EyeOff size={15} /> : <Eye size={15} />}
                 </button>
               </div>
 
               {/* Password Requirement */}
               <div className="mt-1.5 flex items-start gap-1 text-[11px] text-muted-foreground">
-                <AlertCircle
-                  size={12}
-                  className="mt-0.5 shrink-0"
-                />
+                <AlertCircle size={12} className="mt-0.5 shrink-0" />
 
-                <span>
-                  Use 8+ characters with a number and symbol.
-                </span>
+                <span>Use 8+ characters with a number and symbol.</span>
               </div>
             </div>
 
             {/* Terms */}
             <div className="flex gap-2.5 rounded-small border border-primary/20 bg-soft p-3">
-              <ShieldCheck
-                size={15}
-                className="mt-0.5 shrink-0 text-primary"
-              />
+              <ShieldCheck size={15} className="mt-0.5 shrink-0 text-primary" />
 
               <p className="text-[11px] leading-relaxed text-ink-soft">
                 By joining you agree to our{" "}

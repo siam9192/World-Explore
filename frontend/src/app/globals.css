@@ -149,3 +149,13 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), sans-serif;
 }
+
+
+button:hover {
+   cursor: pointer;
+}
+
+
+button:disabled {
+   cursor:default;
+}

@@ -11,7 +11,7 @@ function Header() {
  
 
   return (
-    <header className="border-b border-border bg-background">
+    <header className="border-b border-border bg-surface">
       {/* ================= TOP BAR ================= */}
       <div className="bg-primary-dark text-primary-foreground">
         <Container>
