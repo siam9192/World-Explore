@@ -15,7 +15,7 @@ import {
   Star,
 } from "lucide-react";
 
-import Input from "@/components/ui/Input";
+import Input from "@/components/ui/input";
 
 export default function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false);

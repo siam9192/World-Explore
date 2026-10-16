@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Apple, Check, Eye, EyeOff, Lock, Mail } from "lucide-react";
 
-import Input from "@/components/ui/Input";
+import Input from "@/components/ui/input";
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);

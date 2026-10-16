@@ -2,7 +2,7 @@
 "use client";
 
 import Container from "@/components/layout/Container";
-import Input from "@/components/ui/Input";
+import Input from "@/components/ui/input";
 import { getCategories } from "@/services/category.service";
 import { Category } from "@/types/category.type";
 import {
