@@ -3,6 +3,7 @@
     "id": "dest-001",
     "title": "Seventeen centuries of quiet beauty",
     "slug": "kyoto-japan",
+    "categories": ["Historical", "Cultural", "Nature"],
     "images": [
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80",
       "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1600&q=80",
@@ -79,6 +80,7 @@
     "id": "dest-002",
     "title": "The city of lights and timeless romance",
     "slug": "paris-france",
+    "categories": ["City", "Cultural", "Historical"],
     "images": [
       "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80",
       "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1600&q=80",
@@ -146,6 +148,7 @@
     "id": "dest-003",
     "title": "Where ancient streets meet modern energy",
     "slug": "istanbul-turkey",
+    "categories": ["Historical", "Cultural", "City"],
     "images": [
       "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1600&q=80",
       "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1600&q=80",
@@ -213,6 +216,7 @@
     "id": "dest-004",
     "title": "A tropical escape surrounded by emerald seas",
     "slug": "bali-indonesia",
+    "categories": ["Beach", "Island", "Nature", "Cultural"],
     "images": [
       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=80",
       "https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=1600&q=80",
@@ -280,6 +284,7 @@
     "id": "dest-005",
     "title": "Where mountains rise above a city of dreams",
     "slug": "cape-town-south-africa",
+    "categories": ["Mountain", "Nature", "Adventure", "Beach", "City"],
     "images": [
       "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=1600&q=80",
       "https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e?auto=format&fit=crop&w=1600&q=80",
@@ -347,6 +352,7 @@
     "id": "dest-006",
     "title": "A city built between canals and centuries",
     "slug": "venice-italy",
+    "categories": ["City", "Historical", "Cultural"],
     "images": [
       "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1600&q=80",
       "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1600&q=80",
@@ -414,6 +420,7 @@
     "id": "dest-007",
     "title": "Where fjords meet colorful Nordic streets",
     "slug": "bergen-norway",
+    "categories": ["Mountain", "Nature", "Adventure", "City"],
     "images": [
       "https://images.unsplash.com/photo-1504829857797-ddff29c27927?auto=format&fit=crop&w=1600&q=80",
       "https://images.unsplash.com/photo-1520769669658-f07657f5a307?auto=format&fit=crop&w=1600&q=80",
@@ -481,6 +488,7 @@
     "id": "dest-008",
     "title": "A desert city painted in a thousand shades of blue",
     "slug": "chefchaouen-morocco",
+    "categories": ["Historical", "Cultural", "City"],
     "images": [
       "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=80",
       "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1600&q=80",
@@ -548,6 +556,7 @@
     "id": "dest-009",
     "title": "A modern city framed by alpine peaks",
     "slug": "zurich-switzerland",
+    "categories": ["Mountain", "Nature", "City"],
     "images": [
       "https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&w=1600&q=80",
       "https://images.unsplash.com/photo-1527095655060-4026c4af2b7c?auto=format&fit=crop&w=1600&q=80",
@@ -615,6 +624,7 @@
     "id": "dest-010",
     "title": "Tropical islands where time slows down",
     "slug": "maldives",
+    "categories": ["Beach", "Island", "Nature"],
     "images": [
       "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1600&q=80",
       "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1600&q=80",

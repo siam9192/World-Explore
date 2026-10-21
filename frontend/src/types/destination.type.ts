@@ -6,6 +6,7 @@ export interface Destination extends Pick<
   | "title"
   | "images"
   | "slug"
+  | "categories"
   | "badge"
   | "isFavorite"
   | "rating"

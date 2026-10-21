@@ -1,11 +1,10 @@
 import {
-  Menu,
-  X,
   Home,
   Compass,
   Tags,
   BookOpen,
   Info,
+  Heart,
 } from "lucide-react";
 
 export const navRoutes = [
@@ -23,6 +22,11 @@ export const navRoutes = [
     label: "Categories",
     path: "/categories",
     icon: Tags,
+  },
+  {
+    label: "Favourites",
+    path: "/favourites",
+    icon: Heart,
   },
   {
     label: "Journal",

@@ -1,13 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Heart,
-  MapPin,
-  Star,
-  ArrowUpRight,
-} from "lucide-react";
+import { MapPin, Star, ArrowUpRight } from "lucide-react";
 
 import { Destination } from "@/types/destination.type";
+import FavoriteButton from "./FavoriteButton";
 
 interface Props {
   destination: Destination;
@@ -19,7 +15,6 @@ const DestinationCard = ({ destination }: Props) => {
     slug,
     images,
     badge,
-    isFavorite,
     rating,
     totalReviews,
     shortDescription,
@@ -50,20 +45,7 @@ const DestinationCard = ({ destination }: Props) => {
         )}
 
         {/* Favourite */}
-        <button
-          type="button"
-          aria-label={
-            isFavorite
-              ? `Remove ${title} from favourites`
-              : `Add ${title} to favourites`
-          }
-          className="absolute right-2.5 top-2.5 flex h-8 w-8 items-center justify-center rounded-full bg-white text-foreground shadow-sm transition-colors hover:bg-white/90 sm:right-3 sm:top-3 sm:h-9 sm:w-9"
-        >
-          <Heart
-            size={17}
-            className={isFavorite ? "fill-primary text-primary" : ""}
-          />
-        </button>
+        <FavoriteButton destinationId={destination.id} destinationTitle={title} />
       </div>
 
       {/* Content */}
