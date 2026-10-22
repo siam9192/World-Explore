@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -19,6 +19,58 @@ import Input from "@/components/ui/input";
 
 export default function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    setIsSubmitting(true);
+    setErrorMessage("");
+    setSuccessMessage("");
+
+    const formData = new FormData(event.currentTarget);
+    const apiUrl =
+      process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000/api/v1";
+
+    try {
+      const response = await fetch(`${apiUrl}/auth/register`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: {
+            first: formData.get("firstName"),
+            last: formData.get("lastName"),
+          },
+          email: formData.get("email"),
+          password: formData.get("password"),
+        }),
+      });
+      const result: unknown = await response.json();
+
+      if (!response.ok) {
+        const message =
+          typeof result === "object" &&
+          result !== null &&
+          "message" in result &&
+          typeof result.message === "string"
+            ? result.message
+            : "Could not create your account. Please try again.";
+        setErrorMessage(message);
+        return;
+      }
+
+      setSuccessMessage("Your account is ready. You can now log in.");
+      form.reset();
+    } catch {
+      setErrorMessage(
+        "Could not connect to the server. Please try again in a moment.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
 
   return (
     <main className="grid min-h-screen lg:grid-cols-2">
@@ -140,7 +192,7 @@ export default function RegisterPage() {
           </div>
 
           {/* Form */}
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             {/* First + Last Name */}
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
@@ -156,6 +208,8 @@ export default function RegisterPage() {
                   name="firstName"
                   type="text"
                   autoComplete="given-name"
+                  required
+                  maxLength={80}
                   placeholder="Maya"
                   className="h-10 text-xs sm:text-extra-small"
                 />
@@ -174,6 +228,8 @@ export default function RegisterPage() {
                   name="lastName"
                   type="text"
                   autoComplete="family-name"
+                  required
+                  maxLength={80}
                   placeholder="Lindqvist"
                   className="h-10 text-xs sm:text-extra-small"
                 />
@@ -194,6 +250,8 @@ export default function RegisterPage() {
                 name="email"
                 type="email"
                 autoComplete="email"
+                required
+                maxLength={254}
                 placeholder="maya@example.com"
                 className="h-10 text-xs sm:text-extra-small"
               />
@@ -214,6 +272,10 @@ export default function RegisterPage() {
                   name="password"
                   type={showPassword ? "text" : "password"}
                   autoComplete="new-password"
+                  required
+                  minLength={8}
+                  maxLength={72}
+                  pattern="(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,72}"
                   placeholder="Enter your password"
                   className="h-10 pr-10 text-xs sm:text-extra-small"
                 />
@@ -259,12 +321,24 @@ export default function RegisterPage() {
               </p>
             </div>
 
+            {(errorMessage || successMessage) && (
+              <p
+                role={errorMessage ? "alert" : "status"}
+                className={`text-xs ${
+                  errorMessage ? "text-red-600" : "text-primary"
+                }`}
+              >
+                {errorMessage || successMessage}
+              </p>
+            )}
+
             {/* Register */}
             <button
               type="submit"
-              className="flex h-10 w-full items-center justify-center rounded-small bg-primary text-xs font-semibold text-primary-foreground transition-all hover:bg-primary-dark active:scale-[0.99]"
+              disabled={isSubmitting}
+              className="flex h-10 w-full items-center justify-center rounded-small bg-primary text-xs font-semibold text-primary-foreground transition-all hover:bg-primary-dark active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-70"
             >
-              Create free account
+              {isSubmitting ? "Creating account..." : "Create free account"}
             </button>
           </form>
 
