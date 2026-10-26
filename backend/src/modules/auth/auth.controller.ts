@@ -1,6 +1,7 @@
 import type { RequestHandler } from "express";
 import type { ParamsDictionary } from "express-serve-static-core";
 
+import { catchAsync } from "../../middleware/catch-async.js";
 import type {
   ChangePasswordPayload,
   RegisterPayload,
@@ -17,7 +18,7 @@ export const register: RequestHandler<
   ParamsDictionary,
   unknown,
   RegisterPayload
-> = async (request, response) => {
+> = catchAsync(async (request, response) => {
   const result = await registerUser(request.body);
 
   return successResponse(
@@ -26,24 +27,24 @@ export const register: RequestHandler<
     "Your account was created successfully.",
     result,
   );
-};
+});
 
 export const login: RequestHandler<
   ParamsDictionary,
   unknown,
   UserLoginPayload
-> = async (request, response) => {
+> = catchAsync(async (request, response) => {
   const result = await loginUser(request.body);
 
   return successResponse(response, 200, "You are now logged in.", result);
-};
+});
 
 export const changePassword: RequestHandler<
   ParamsDictionary,
   unknown,
   ChangePasswordPayload
-> = async (request, response) => {
-  const userId = request.auth?.userId;
+> = catchAsync(async (request, response) => {
+  const userId = request.auth?.id;
   if (!userId) {
     return errorResponse(response, 401, "Authentication is required.");
   }
@@ -54,4 +55,4 @@ export const changePassword: RequestHandler<
     200,
     "Your password was changed successfully.",
   );
-};
+});

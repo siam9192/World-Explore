@@ -16,11 +16,3 @@ export interface ChangePasswordPayload {
   oldPassword: string;
   newPassword: string;
 }
-
-declare module "express-serve-static-core" {
-  interface Request {
-    auth?: {
-      userId: string;
-    }
-  }
-}

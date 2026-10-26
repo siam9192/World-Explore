@@ -1,6 +1,6 @@
 import bcrypt from "bcryptjs";
 
-import { Prisma, UserRole } from "../../generated/prisma/client.js";
+import { Prisma, UserRole, UserStatus } from "../../generated/prisma/client.js";
 import prisma from "../../lib/prisma.js";
 import { HttpError } from "../../utils/http-error.js";
 import type {
@@ -34,6 +34,7 @@ export async function registerUser(input: RegisterPayload) {
         lastName: input.name.last,
         email: input.email,
         passwordHash,
+        status:UserStatus.active,
         role: UserRole.user,
         lastLoginAt: new Date(),
       },

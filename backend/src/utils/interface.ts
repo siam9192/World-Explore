@@ -1,4 +1,3 @@
-
 export interface ApiMeta {
   page: number;
   limit: number;
@@ -12,4 +11,19 @@ export interface ApiResponse<T = unknown> {
   data?: T;
   errors?: unknown;
   meta?: ApiMeta;
+}
+
+export interface PaginationOptions {
+  page: number ;
+  sortBy: string;
+  sortOrder?:"asc"|"desc";
+  limit: number;
+  skip:number,
+  take:number
+}
+
+
+export interface AuthUser {
+  id:string
+  role:string
 }

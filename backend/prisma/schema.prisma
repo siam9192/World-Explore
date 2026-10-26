@@ -7,76 +7,82 @@ datasource db {
   provider = "postgresql"
 }
 
-model User {
-  id           String   @id @default(cuid())
-  firstName    String   @db.VarChar(80)
-  lastName     String   @db.VarChar(80)
-  profilePicture String?
-  email        String   @unique @db.VarChar(254)
-  passwordHash String
-  googleId String? 
-  role UserRole
-  lastLoginAt DateTime 
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
-
-  @@map("users")
-}
-
-
-model Destination {
-  id              String   @id @default(cuid())
-  title           String
-  slug            String   @unique
-  tagline         String
-
-  images          String[]
-  categories      String[]
-  badge           String?
-  isFavorite      Boolean  @default(false)
-
-  rating          Float    @default(0)
-  totalReviews    Int      @default(0)
-
-  description     String   @db.Text
-  shortDescription String  @db.Text
-  editorNote      String   @db.Text
-
-  price           Json
-  guideVerified   Boolean  @default(false)
-  bestTime        String
-
-  dailyBudget     Json
-
-  idealTrip       String
-  gettingAround   String[]
-  languages       String[]
-
-  highlights      Json
-
-  activities      Activity[]
-  location        DestinationLocation?
-  reviews         Review[]
-   
-   status         DestinationStatus
-  createdAt       DateTime @default(now ())
-  updatedAt       DateTime @updatedAt
-
-  isDeleted      Boolean @default(false)
-}
-
 model Activity {
   id            String      @id @default(cuid())
   title         String
   description   String?     @db.Text
+  clientIconId  Int?
   image         String?
   price         Float?
   duration      String?
+  isFree        Boolean?
+  currency      String?
+  icon          String?
   destinationId String
   destination   Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
-
   createdAt     DateTime    @default(now())
   updatedAt     DateTime    @updatedAt
+
+  @@index([destinationId])
+  @@map("activities")
+}
+
+model Category {
+  id                String                @id @default(cuid())
+  name              String                @unique
+  image             String
+  totalDestinations Int                   @default(0)
+  createdAt         DateTime              @default(now())
+  updatedAt         DateTime              @updatedAt
+  destinations      DestinationCategory[]
+
+  @@map("categories")
+}
+
+model Destination {
+  id              String                @id @default(cuid())
+  title           String
+  slug            String                @unique
+  tagline         String
+  images          Json
+  badge           String?
+  isFavorite      Boolean               @default(false)
+  rating          Float                 @default(0)
+  totalReviews    Int                   @default(0)
+  description     String                @db.Text
+  shortDescription String               @db.Text
+  editorNote      String                @db.Text
+  price           Json
+  guideVerified   Boolean               @default(false)
+  bestTimes       Json
+  dailyBudget     Json
+  idealTrip       String
+  gettingAround   Json
+  languages       Json
+  highlights      Json
+  status          DestinationStatus     @default(active)
+  isDeleted       Boolean               @default(false)
+  createdAt       DateTime              @default(now())
+  updatedAt       DateTime              @updatedAt
+  activities      Activity[]
+  categories      DestinationCategory[]
+  location        DestinationLocation?
+  reviews         Review[]
+  favourites      FavouriteDestination[]
+
+  @@index([status, isDeleted])
+  @@map("destinations")
+}
+
+model DestinationCategory {
+  categoryId    String
+  destinationId String
+  category      Category    @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  destination   Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+
+  @@id([destinationId, categoryId])
+  @@index([categoryId])
+  @@map("destination_categories")
 }
 
 model DestinationLocation {
@@ -87,30 +93,114 @@ model DestinationLocation {
   address       String
   description   String      @db.Text
   mapUrl        String?
-
   destinationId String      @unique
   destination   Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+
+  @@map("destination_locations")
+}
+
+model FavouriteDestination {
+  id            String      @id @default(cuid())
+  userId        String
+  destinationId String
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  destination   Destination @relation(fields: [destinationId], references: [id])
+  user          User        @relation(fields: [userId], references: [id])
+
+  @@map("favourite_destinations")
+}
+
+model Location {
+  id        String   @id @default(cuid())
+  city      String
+  state     String?
+  country   String
+  address   String
+  full      String
+  mapUrl    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("locations")
 }
 
 model Review {
   id            String      @id @default(cuid())
-  authorId        String
+  authorId      String
   rating        Float
   comment       String      @db.Text
   destinationId String
   destination   Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
-
+  author        User        @relation(fields: [authorId], references: [id])
   createdAt     DateTime    @default(now())
   updatedAt     DateTime    @updatedAt
+  reports ReviewReport[]
+  @@index([authorId])
+  @@index([destinationId])
+  @@map("reviews")
 }
 
+model ReviewReport {
+  id        String   @id @default(cuid())
+  reason    String
+  details   String?
+  status    ReportStatus @default(pending)
+
+  reviewId  String
+  userId    String
+
+  review    Review   @relation(fields: [reviewId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([reviewId, userId])
+  @@index([status])
+  @@index([reviewId])
+  @@index([userId])
+  
+  @@map("review_reports")
+}
+
+enum ReportStatus {
+  pending
+  reviewed
+  resolved
+  dismissed
+}
+
+model User {
+  id             String     @id @default(cuid())
+  firstName      String     @db.VarChar(80)
+  lastName       String     @db.VarChar(80)
+  profilePicture String?
+  email          String     @unique @db.VarChar(254)
+  passwordHash   String
+  googleId       String?    @unique
+  role           UserRole   @default(user)
+  lastLoginAt    DateTime
+  status         UserStatus
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+  reviews        Review[]
+  favourites     FavouriteDestination[]
+  review_reports ReviewReport[]
+  @@map("users")
+}
+
+enum DestinationStatus {
+  active
+  inactive
+}
 
 enum UserRole {
   admin
   user
 }
 
-enum DestinationStatus {
+enum UserStatus {
   active
   inactive
 }

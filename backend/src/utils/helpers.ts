@@ -36,3 +36,28 @@ export function errorResponse(
 
   return res.status(statusCode).json(response);
 }
+
+export function calculatePagination(query: {
+  page?: number | string;
+  sortBy?: string;
+  sortOrder?: string;
+  limit?: number | string;
+  total?: number;
+}) {
+  const safePage = Math.max(1, Number(query.page ?? 1) || 1);
+  const safeLimit = Math.max(1, Number(query.limit ?? 20) || 20);
+  const sortBy = query.sortBy?.trim() || "createdAt";
+  const sortOrder = query.sortOrder === "asc" ? "asc" : "desc";
+  const safeTotal = Number(query.total ?? 0) || 0;
+
+  return {
+    page: safePage,
+    limit: safeLimit,
+    skip: (safePage - 1) * safeLimit,
+    sortBy,
+    sortOrder,
+    total: safeTotal,
+    totalPages:
+      safeTotal > 0 ? Math.max(1, Math.ceil(safeTotal / safeLimit)) : 1,
+  };
+}
